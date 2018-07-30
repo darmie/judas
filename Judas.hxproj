@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project version="2">
+  <!-- Output SWF options -->
+  <output>
+    <movie outputType="CustomBuild" />
+    <movie input="" />
+    <movie path="project.xml" />
+    <movie fps="30" />
+    <movie width="800" />
+    <movie height="600" />
+    <movie version="0" />
+    <movie minorVersion="0" />
+    <movie platform="Lime" />
+    <movie background="#FFFFFF" />
+  </output>
+  <!-- Other classes to be compiled into your SWF -->
+  <classpaths>
+    <class path="C:\Users\Damilare\AppData\Roaming\haxe\haxelib\lime\6,2,0" />
+    <class path="C:\Users\Damilare\AppData\Roaming\haxe\haxelib\haxe-crypto\0,0,7\src" />
+    <class path="C:\Users\Damilare\AppData\Roaming\haxe\haxelib\console,hx\0,2,3\src" />
+    <class path="C:\Users\Damilare\AppData\Roaming\haxe\haxelib\polygonal-ds\2,0,1\src" />
+    <class path="C:\Users\Damilare\AppData\Roaming\haxe\haxelib\polygonal-printf\1,0,2-beta" />
+    <class path="Source" />
+    <class path="Export\html5\haxe" />
+  </classpaths>
+  <!-- Build options -->
+  <build>
+    <option directives="lime=6.2.0&#xA;haxe-crypto=0.0.7&#xA;console.hx=0.2.3&#xA;polygonal-ds=2.0.1&#xA;polygonal-printf=1.0.2-beta&#xA;tools=6.2.0&#xA;howlerjs&#xA;no-compilation&#xA;lime-html5&#xA;html5&#xA;web&#xA;html5&#xA;html&#xA;display" />
+    <option flashStrict="False" />
+    <option noInlineOnDebug="False" />
+    <option mainClass="ApplicationMain" />
+    <option enabledebug="False" />
+    <option additional="--macro lime.Lib.extraParams()" />
+  </build>
+  <!-- haxelib libraries -->
+  <haxelib>
+    <!-- example: <library name="..." /> -->
+  </haxelib>
+  <!-- Class files to compile (other referenced classes will automatically be included) -->
+  <compileTargets>
+    <!-- example: <compile path="..." /> -->
+  </compileTargets>
+  <!-- Paths to exclude from the Project Explorer tree -->
+  <hiddenPaths>
+    <hidden path="obj" />
+  </hiddenPaths>
+  <!-- Executed before build -->
+  <preBuildCommand>"$(CompilerPath)/haxelib" run lime build "$(OutputFile)" $(TargetBuild) -$(BuildConfig) -Dfdb</preBuildCommand>
+  <!-- Executed after build -->
+  <postBuildCommand alwaysRun="False" />
+  <!-- Other project options -->
+  <options>
+    <option showHiddenPaths="False" />
+    <option testMovie="Custom" />
+    <option testMovieCommand="" />
+  </options>
+  <!-- Plugin storage -->
+  <storage />
+</project>

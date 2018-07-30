@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="Judas" package="com.sample.judas" version="1.0.0" company="Judas 3 Game Engine" />
+	<app main="Main" path="Export" file="Judas" />
+	
+	<source path="Source" />
+	
+	<haxelib name="lime" />
+	<haxelib name="haxe-crypto" />
+	<haxelib name="console.hx" />
+	<haxelib name="polygonal-ds" />
+	
+	<assets path="Assets" rename="assets" />
+	
+</project>
